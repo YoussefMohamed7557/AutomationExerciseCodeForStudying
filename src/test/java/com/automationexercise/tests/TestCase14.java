@@ -92,13 +92,13 @@ public class TestCase14 extends TestBasic {
         String totalAmount = new CheckoutPage(getDriver()).getTotalAmount().getText();
 
         for (int i = 0; i < 2; i++) {
-            Assert.assertEquals(totalPrices.get(i), prices.get(i), "Verify Review Your Order");
-            Assert.assertEquals(quantity.get(i), "1", "Verify Review Your Order");
+            Assert.assertEquals(totalPrices.get(i), prices.get(i), "Verify Review Your Order1");
+            Assert.assertEquals(quantity.get(i), "1", "Verify Review Your Order2");
         }
 
-        Assert.assertEquals(productNames.get(0), "Blue Top", "Verify Review Your Order");
-        Assert.assertEquals(productNames.get(1), "Men Tshirt", "Verify Review Your Order");
-        Assert.assertEquals(totalAmount, "Rs. 900", "Verify Review Your Order");
+        Assert.assertEquals(productNames.get(0), "Blue Top", "Verify Review Your Order3");
+        Assert.assertEquals(productNames.get(1), "Men Tshirt", "Verify Review Your Order4");
+        Assert.assertEquals(totalAmount, "Rs. 900", "Verify Review Your Order5");
     }
 
     public static void verifyAddressDetails() throws IOException, ParseException {
